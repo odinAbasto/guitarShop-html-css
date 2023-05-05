@@ -1,0 +1,358 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cabin:wght@500&family=Coda&family=DM+Sans&family=Great+Vibes&family=Lato&family=Raleway:wght@300&family=Roboto:wght@100&family=Rubik&display=swap');
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../icomoon/fonts/icomoon.eot?5ogygx');
+  src:  url('../icomoon/fonts/icomoon.eot?5ogygx#iefix') format('embedded-opentype'),
+    url('../icomoon/fonts/icomoon.ttf?5ogygx') format('truetype'),
+    url('../icomoon/fonts/icomoon.woff?5ogygx') format('woff'),
+    url('../icomoon/fonts/icomoon.svg?5ogygx#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-login:before {
+  content: "\e900";
+}
+.icon-buscar:before {
+  content: "\e986";
+  font-size: 18px;
+}
+.icon-menu:before {
+  content: "\e9bd";
+  vertical-align: bottom; 
+}
+.icon-facebook:before {
+  content: "\ea91";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-youtube:before {
+  content: "\ea9d";
+}
+.icon-carrito:before {
+  vertical-align: bottom; 
+  font-size: 30px;
+  content: "\e901";
+  
+}
+
+  sup{
+    font-size: 15px;
+  }
+  
+
+/*===============================body====================================*/  
+
+body{
+  background-color: white;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+	margin:0;
+	padding:0;
+  
+}   
+
+
+/*===============================header====================================*/  
+header{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: rgb(202, 42, 42);
+  }
+header>div{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+
+  box-sizing: border-box;;
+  padding-left: 20px;
+    padding-right: 20px;
+}
+.headerLeft{
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 80px;
+} 
+.headerLeft img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.headerLeft a{
+  height: auto;
+}
+form {
+  display: flex;
+
+  justify-content: center;
+   
+}
+
+input[type="text"] {
+
+  padding: 9px;
+  border: none;
+  width: 60%;
+  font-family: 'Raleway', sans-serif;
+
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  
+}
+input[type="text"]:focus{
+  outline: none;
+}
+
+
+button[type="submit"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px;
+  background-color: rgb(231, 231, 231);
+  color: grey;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+button:hover{
+  font-weight: bold;
+}
+
+
+.headerRight{
+  display: flex;
+  justify-content: end;
+}
+.headerRight a{
+  margin-right: 10px;
+}
+header a{
+  text-decoration: none;
+  color: white;
+  height: 100%;
+}
+.headerRight a:nth-child(2){
+  display: none;
+}
+.headerRight span{
+  font-size: 30px;
+   color: white
+}
+span:hover{
+  color: black;
+}
+
+
+nav{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-color: black;
+  height: 40px;
+  margin: 0 auto;
+
+  
+}
+nav ul{
+  display: flex;
+  margin: 0;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+  list-style-type: none;
+}
+nav li{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li:hover{
+  background-color: rgb(202, 42, 42);
+}
+
+nav a{
+width: 100%;
+text-align: center;
+padding-top: 20px;}
+
+  
+/*===============================MAIN====================================*/  
+
+h1{
+  font-family: 'Cabin', sans-serif;
+    font-weight: 200;
+}
+
+main{
+  max-width: 1400px;
+  margin: 0 auto;
+  box-sizing: border-box;;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+main p{
+  text-align:justify;
+}
+
+main a{
+  font-family: 'DM Sans', sans-serif;
+}
+
+
+main h2{
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+
+}
+main p{
+  text-align:justify;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/*===============================footer====================================*/  
+footer{
+    background-color: black;
+
+}
+.footerContainer{
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    max-width: 1400px; 
+    margin: 0 auto; 
+    color: white;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+footer ul{
+    list-style-type: none;
+    padding: 0;
+}
+footer li{
+    padding: 3px;
+}
+footer a{
+  text-decoration: none;
+  color: white;
+}
+footer h2{
+  font-size: 20px;
+}
+
+
+
+
+/*======================================================================RESPONSIVE====================================*/  
+/*Responsive*/
+  @media only screen and (max-width: 1250px) {
+    /*===============================HEADER====================================*/  
+    .headerRight>a:nth-child(2){
+      display: block;
+    }
+      .headerRight>a:nth-child(3){
+        display: none;
+      }
+      nav{
+        display: none;
+      }
+      form{
+        display: none;
+      }
+      header>div{
+        height: 60px;
+      }
+      .headerLeft{
+        height: 60px;
+      }
+      .headerLeft img{
+        height: 50px;
+        width: 50px;
+      }
+
+    /*===============================MAIN====================================*/  
+ 
+    /*===============================FOOTER====================================*/  
+
+
+
+
+
+  }
+  @media only screen and (max-width: 625px) {
+    /*===============================HEADER====================================*/  
+
+
+    /*===============================MAIN====================================*/  
+    .weekOffers{
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(4,1fr);    
+    }
+
+    /*==============================FOOTER====================================*/  
+    .footerContainer{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .footerContainer>div{
+        min-width: 170px;
+    }
+    footer h2{
+        font-size: 16px;
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+     }
+    footer ul{
+        align-content: center;
+    }
+    footer li{
+      font-size: 16px;
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+    }
+
+
+  }

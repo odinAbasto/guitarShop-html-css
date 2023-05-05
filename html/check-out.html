@@ -1,0 +1,200 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Checkout - Confirma tu compra en Odin Guitarras</title>
+  <meta name="description" content="Completa tu compra en Odin Guitarras de manera fácil y segura. En nuestra página de check-out, podrás confirmar los detalles de tu pedido, seleccionar la forma de pago y el método de envío. Nuestro equipo se encargará de procesar tu pedido de manera eficiente y de asegurarse de que recibas tu guitarra a tiempo.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="../css/check-out.css">
+
+</head>
+
+<body>
+  <header>
+    <div>
+      <div class="headerLeft">
+          <a href="../index.html" class="homelink">
+            <img src="../img/principal/guitarras.png" alt="">
+          </a>
+      </div>
+
+      <div class="searchBarContainer">
+        <form>
+          <input type="text" placeholder="Buscar producto...">
+          <button type="submit"><span class="icon-buscar"></span></button>
+        </form>
+      </div>
+      
+    
+      <div class="headerRight">
+        
+        <a href="../404.html"><span class="icon-login"></span></a>
+        <a href="../404.html"><span class="icon-menu"></span></a>
+        <a href="carrito.html"><span class="icon-carrito"></span></a>
+      </div>
+    </div>
+    
+
+    <nav>
+      <ul>
+        <li><a href="tienda.html">PRODUCTOS </li></a>
+        <li><a href="servicios.html">SERVICIOS</a></li>
+        <li><a href="contacto.html">CONTACTO</a></li>
+        <li><a href="quienes-somos.html">QUIÉNES SOMOS</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Checkout</h1>
+    <div class="container">
+      <form class="Checkout">
+        <h2>Dirección de envío</h2>
+        <div id="nombre">
+          <div><label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" required></div>
+          <div><label for="Apellidos">Apellidos</label>
+            <input type="text" id="apellidos" name="apellidos" required></div>
+
+        </div>
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" required>
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+         <div id="direccion">
+          <div> <label for="calle">Calle</label>
+            <input type="text" id="calle" name="calle" required>
+            </div>
+          <div><label for="numero">Número</label>
+            <input type="text" id="numero" name="numero" required></div>
+         </div>
+        <label for="ciudad">Ciudad</label>
+        <input type="text" id="ciudad" name="ciudad" required>
+        <div id="provincia">
+          <div><label for="provincia">Provincia</label>
+            <input type="text" id="provincia" name="provincia" required>
+            </div>
+          <div><label for="codigo">Código postal</label>
+            <input type="text" id="codigo" name="codigo" required></div>
+        </div>
+        <label class="terminos"><input type="checkbox" class="terminos" required>
+          He leído y acepto los términos y condiciones de venta, la política de privacidad y el aviso legal de esta página web.
+        </label>
+          
+        
+        
+        
+      </form>
+      <div>
+        <section class="resumen">
+          <h2>Resumen</h2>
+          <span>1 x Alhambra 4P</span>
+          <span>1510€</span>
+          <span>Subtotal</span>
+          <span>1510€</span>
+          <span>Gastos de envío</span>
+          <span>20€</span>
+          <span>IVA(21%)</span>
+          <span>317€</span>
+          <span>TOTAL</span>
+          <span>1829€</span>
+          
+        </section>
+  
+        <form class="pago">
+          <h2 #pago>Información de pago</h2>
+          <p>Por favor, seleccione el método de pago:</p>
+          <div>
+            <input type="radio" id="tarjeta" name="metodo" value="tarjeta" checked>
+            <label for="tarjeta">Tarjeta</label>
+          </div>
+          <div>
+            <input type="radio" id="paypal" name="metodo" value="paypal">
+            <label for="paypal">Paypal</label>
+          </div>
+          <div>
+            <input type="radio" id="transfer" name="metodo" value="transfer">
+            <label for="transfer">Transferencia</label>
+          </div>
+        
+          <div id="titular_">
+            <label for="titular">Nombre del titular</label>
+            <input type="text" id="titular" name="titular" placeholder="" required>
+          </div>
+          <div id="card">
+            <label for="tarjeta">Número de tarjeta</label>
+            <input type="text" id="tarjeta" name="tarjeta" placeholder="" required>
+          </div>
+          <div id="cadcvv">
+            <div>
+              <label for="fecha">Caducidad</label>
+              <input type="month" id="fecha" name="fecha" placeholder="" required>
+            </div>
+            <div>
+              <label for="cvv">CVV</label>
+              <input type="text" id="cvv" name="cvv" placeholder="" required>
+            </div>
+          </div>
+          
+            
+          
+          <input type="submit" value="Finalizar y pagar">
+        
+        </form>
+      </div>
+    </div>
+    
+
+
+
+  
+  </main>
+
+  
+
+
+
+  <footer>
+    <div class="footerContainer">
+      <div class="contacto">
+        <h2><a href="contacto.html">Contacto</a> </h2>
+        <ul>
+          <li>Teléfono</li>
+          <li>Correo electrónico</li>
+          <li>Redes sociales</li>
+        </ul>
+      </div>
+      
+      <div class="legal">
+        <h2><a href="pagina-legal.html">Legal</a></h2>
+        <ul>
+          <li><a href="pagina-legal.html">Aviso legal</a> </li>
+          <li><a href="pagina-legal.html#ppriv">Politica de privacidad</a></li>
+        </ul>
+      </div>
+      <div class="otros">
+        <h2>Ofertas y otros</h2>
+        <ul>
+          <li>Black Friday</li>
+          <li>Codigos de descuento</li>
+          <li>FAQ</li>
+        </ul>
+      </div>
+  
+    </div>
+  </footer>
+
+</body>
+
+</html>
